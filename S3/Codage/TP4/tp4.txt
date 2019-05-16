@@ -1,0 +1,33 @@
+##TEXIER Léane
+##Groupe 1
+
+#Question 2:
+>>> my_coding.code('a')
+'010'
+>>> my_coding.code('b')
+'100'
+>>> my_coding.code('c')
+
+
+#Question 3:
+>>> my_coding.decode('010')
+'a'
+>>> my_coding.decode('100')
+'b'
+>>> my_coding.decode('110')
+'c'
+
+
+#Question 4:
+Quand on tente de coder un symbole qui n'est pas présent dans l'alphabet source, une erreur est levée nous indiquant que le symbole n'est pas codable.
+
+raise Not_codable_symbol()
+coding.Not_codable_symbol
+
+
+#Question 5:
+Quand on tente de décoder un mot qui n'est pas dans le code, une erreur est levée nous indiquant que le mot n'est pas décodable.
+
+raise Undecodable_word()
+coding.Undecodable_word
+

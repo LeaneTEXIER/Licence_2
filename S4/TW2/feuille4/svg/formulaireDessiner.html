@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<!--Léane Texier-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulaire Dessiner</title>
+        <style>
+        body {
+            font-family : Helvetica ;
+            margin-left : 10mm;
+            margin-right : 10mm ;
+        }
+        h1 {
+          color : blue ;
+        }
+        fieldset {
+          border : 1px solid blue ;
+          margin : 10px ;
+        }
+        </style>
+    </head>
+    <body>
+    <form action="dessiner.php" id="formulaire">
+      <fieldset>
+      <select multiple="multiple" size="3" name="fig[]">
+        <option value="cercle">cercle</option>
+        <option value="carre">carre</option>
+        <option value="triangle">triangle</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <label for="cx">cx :</label>
+      <input
+        type="int"
+        name="cx"
+      /><br />
+      <label for="cy">cy :</label>
+      <input
+        type="int"
+        name="cy"
+       /><br />
+       <label for="r">r :</label>
+       <input
+        type="int"
+        name="r"
+       /><br />
+       <label for="angle">angle :</label>
+       <input
+        type="int"
+        name="angle"
+       /><br />
+       </fieldset>
+       <fieldset>
+       <button name="valid" type="submit">Valider</button>
+       </fieldset>
+     </form>
+   </body>

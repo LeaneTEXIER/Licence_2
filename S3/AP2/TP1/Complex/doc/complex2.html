@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>complex2 module &mdash; Module Complex 0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Module Complex 0 documentation" href="index.html" />
+    <link rel="next" title="Un petit programme utilisant les complexes" href="main.html" />
+    <link rel="prev" title="complex1 module" href="complex1.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="main.html" title="Un petit programme utilisant les complexes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="complex1.html" title="complex1 module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Module Complex 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="complex2-module">
+<h1><tt class="docutils literal"><span class="pre">complex2</span></tt> module<a class="headerlink" href="#complex2-module" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="index.html"><em>back</em></a></p>
+<span class="target" id="module-complex2"></span><p><a class="reference internal" href="#module-complex2" title="complex2"><tt class="xref py py-mod docutils literal"><span class="pre">complex2</span></tt></a> module : version 2 of a (simple) module for complex numbers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body"><a class="reference external" href="http://portail.fil.univ-lille1.fr">FIL - IEEA - Univ. Lille1.fr</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">date:</th><td class="field-body">2015, september</td>
+</tr>
+</tbody>
+</table>
+<p>Complex numbers are represented with tuples</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><tt class="xref py py-mod docutils literal"><span class="pre">complex1</span></tt></p>
+</div>
+<dl class="function">
+<dt id="complex2.add">
+<tt class="descclassname">complex2.</tt><tt class="descname">add</tt><big>(</big><em>z1</em>, <em>z2</em><big>)</big><a class="reference internal" href="_modules/complex2.html#add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the sum of the two complex numbers z1 and z2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>z1</strong> (<em>complex</em>) &#8211; a complex number</li>
+<li><strong>z2</strong> (<em>complex</em>) &#8211; a complex number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">z1 + z2</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">complex</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body"><p class="first">none</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">add</span> <span class="p">(</span><span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">create</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">real_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imag_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">6</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.create">
+<tt class="descclassname">complex2.</tt><tt class="descname">create</tt><big>(</big><em>x</em>, <em>y</em><big>)</big><a class="reference internal" href="_modules/complex2.html#create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a complex number with real part x and imaginary part y</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<em>int or float</em>) &#8211; the real part of the complex number to create</li>
+<li><strong>y</strong> (<em>int or float</em>) &#8211; the imaginary part of the complex number to create</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the complex number x + iy</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">complex</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body"><p class="first">none</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">real_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imag_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.equal">
+<tt class="descclassname">complex2.</tt><tt class="descname">equal</tt><big>(</big><em>z1</em>, <em>z2</em><big>)</big><a class="reference internal" href="_modules/complex2.html#equal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.equal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>return True if complex numbers z1 and z2 are equals</dt>
+<dd>False otherwise</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>z1</strong> (<em>complex</em>) &#8211; a complex number</li>
+<li><strong>z2</strong> (<em>complex</em>) &#8211; a complex number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if z1 = z2, False otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">bool</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body"><p class="first">none</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">z1</span> <span class="o">=</span> <span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z2</span> <span class="o">=</span> <span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z3</span> <span class="o">=</span> <span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">equal</span> <span class="p">(</span><span class="n">z1</span><span class="p">,</span><span class="n">z2</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">equal</span> <span class="p">(</span><span class="n">z1</span><span class="p">,</span><span class="n">z3</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.from_real_number">
+<tt class="descclassname">complex2.</tt><tt class="descname">from_real_number</tt><big>(</big><em>x</em><big>)</big><a class="reference internal" href="_modules/complex2.html#from_real_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.from_real_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>create the complex number x + i0 from real number x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<em>int or float</em>) &#8211; a real number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the complex number x + 0i</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">complex</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body">none</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">from_real_number</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">real_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imag_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.imag_part">
+<tt class="descclassname">complex2.</tt><tt class="descname">imag_part</tt><big>(</big><em>z</em><big>)</big><a class="reference internal" href="_modules/complex2.html#imag_part"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.imag_part" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the imaginary part of complex number z</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>z</strong> (<em>complex</em>) &#8211; a complex number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(float) the imaginary part of z</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int or float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body">none</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imag_part</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.modulus">
+<tt class="descclassname">complex2.</tt><tt class="descname">modulus</tt><big>(</big><em>z</em><big>)</big><a class="reference internal" href="_modules/complex2.html#modulus"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.modulus" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the modulus of complex number z, ie <span class="math">\(\sqrt{x^2 + y^2}\)</span> 
+if $z=x+yi$</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>z</strong> &#8211; a complex number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">his modulus</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body">none</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">modulus</span> <span class="p">(</span><span class="n">create</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">modulus</span> <span class="p">(</span><span class="n">create</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="go">5.0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.mult">
+<tt class="descclassname">complex2.</tt><tt class="descname">mult</tt><big>(</big><em>z1</em>, <em>z2</em><big>)</big><a class="reference internal" href="_modules/complex2.html#mult"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.mult" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the product of the two complex numbers z1 and z2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>z1</strong> (<em>complex</em>) &#8211; a complex number</li>
+<li><strong>z2</strong> (<em>complex</em>) &#8211; a complex number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">z1 * z2</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">complex</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body"><p class="first last">none</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">mult</span> <span class="p">(</span><span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">create</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">real_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">-5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imag_part</span> <span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">10</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.print">
+<tt class="descclassname">complex2.</tt><tt class="descname">print</tt><big>(</big><em>z</em>, <em>end='\n'</em><big>)</big><a class="reference internal" href="_modules/complex2.html#print"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.print" title="Permalink to this definition">¶</a></dt>
+<dd><p>print the complex number z with algebraic form <cite>x + yi</cite>
+where x = real part of z and y = imaginary part</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>z</strong> (<em>complex</em>) &#8211; complex number to print</li>
+<li><strong>end</strong> (<em>string</em>) &#8211; [optional] separator (default is &#8216;\n&#8217;)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">UC:</th><td class="field-body"><p class="first last">none</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="complex2.real_part">
+<tt class="descclassname">complex2.</tt><tt class="descname">real_part</tt><big>(</big><em>z</em><big>)</big><a class="reference internal" href="_modules/complex2.html#real_part"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#complex2.real_part" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the real part of complex number z</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>z</strong> (<em>complex</em>) &#8211; a complex number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the real part of z</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int or float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">UC:</th><td class="field-body">none</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">create</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">real_part</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/logo_FIL.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="complex1.html"
+                        title="previous chapter"><tt class="docutils literal"><span class="pre">complex1</span></tt> module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="main.html"
+                        title="next chapter">Un petit programme utilisant les complexes</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/complex2.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="main.html" title="Un petit programme utilisant les complexes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="complex1.html" title="complex1 module"
+             >previous</a> |</li>
+        <li><a href="index.html">Module Complex 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Éric Wegrzynowski, FIL - IEEA - Univ-lille1.
+      Last updated on 17/09/2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

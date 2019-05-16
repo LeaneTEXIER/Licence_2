@@ -1,0 +1,39 @@
+body {
+   font-family: Helvetica;
+}
+
+section {
+ background-color: LemonChiffon;
+ border-style: dashed;
+ border-color: grey;
+ margin: 4%;
+ padding-top: 1%;
+ }
+
+section h2 {
+  background-color: DarkRed;
+  color: white;
+  margin: 1%;
+  padding-left: 20%;
+  display: inline;
+  border-radius: 8px;
+}
+
+header{
+  text-align: center;
+}
+
+header .nom {
+  color: darkRed;
+}
+
+td{
+  width: 20px;
+  border: 1px solid black;
+}
+
+table{
+  border-collapse: collapse;
+  text-align: center;
+  margin: 3%;
+}

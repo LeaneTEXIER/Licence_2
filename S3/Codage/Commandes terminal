@@ -1,0 +1,28 @@
+Calculatrice conversion de base:
+> gnome-calculator &
+
+Ouvrir fichier avec un éditeur hexa:
+> hexedit cigale1.txt
+
+Visualiser image:
+> display adage.bmp &
+
+Comparer fichiers:
+> diff cigale-ISO-8859-1.txt moncigale-ISO-8859-1.txt
+
+Donne codage du fichier:
+> file cigale-UTF-8.txt
+
+Taille d'un fichier:
+> ls -l cigale-UTF-8.txt
+
+Coder en base 64:
+> base64 cigale-UTF-8.txt > cigale.b64
+
+Décoder en base 64:
+> base64 -d cigale.b64
+
+Comparer 2 fichiers octet par octet:
+> cmp -l -b <fichier1> <fichier2>
+
+

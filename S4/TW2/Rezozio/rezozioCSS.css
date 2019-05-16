@@ -1,0 +1,167 @@
+/*TEXIER Léane */
+
+html{
+  background-color: LightSkyBlue;
+  font-family: Trebuchet MS;
+}
+
+h1{
+  position:static;
+  color: Blue;
+  text-align: center;
+  border: 5px double blue;
+  font-size: 300%;
+}
+
+#MonCompte a, #Accueil a, #MiseAJour a, #Credits a, #lien_credits{
+  border:1px solid black;
+  background-color:GreenYellow;
+  text-align:center;
+  color:Black;
+  text-decoration: none;
+}
+
+#Credits{
+  float: right;
+  margin: 1%;
+}
+#Accueil, #MiseAJour{
+  padding: 1%;
+}
+
+div form fieldset{
+  background-color: GreenYellow;
+  display: inline-block;
+}
+
+#Connexion{
+  float: right;
+}
+
+#Connexion>button, #Abo_Desabo button{
+  background-color: greenyellow;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+#MessageInformation p{
+  text-align: center;
+}
+
+#MessageInformation #Erreur{
+  color: red;
+  border: 5px solid red;
+}
+
+#MessageInformation #Ok{
+  color: #006400;
+  border: 5px solid LimeGreen;
+}
+
+#MessageInformation #EnCours{
+  color: orangeRed;
+  border: 5px solid orange;
+}
+
+#recherche{
+  border: 1px dashed Blue;
+}
+
+h3{
+  text-decoration: underline;
+}
+
+li{
+  color: Indigo;
+}
+
+#MessageIndividuel{
+  border: 1px solid Black;
+  margin: 1%;
+}
+
+#MessageIndividuel a, #ListeAbonnes a, #ListeAbonnements a{
+  color: #FF9000;
+  text-decoration: none;
+}
+
+
+a span{
+  position:absolute;
+  margin-top:-70px;
+  background:rgba(10, 10, 100, 0.7);
+  padding:25px;
+  border-radius:3px;
+  opacity:0;
+  transform:scale(0) rotate(-180deg);
+  transition:all .25s;
+}
+
+a:hover span{
+  transform:scale(1) rotate(0);
+   opacity:1;
+}
+
+#MessageIndividuel>#authorMessages{
+  border-bottom: 1px dotted black;
+  padding: 1%;
+  background-color: #00C0D0
+}
+
+#MessageIndividuel>#authorMessages a{
+  color: Blue;
+  text-decoration: underline;
+}
+
+#MessageIndividuel time{
+  background-color: LightGrey;
+  font-size: 75%;
+  margin: 1%;
+}
+
+#MessageIndividuel #HeureMessage{
+  border-top: 1px dotted black;
+}
+
+#ButtonMessages button, #ButtonCitations button, #ListeAbonnements button, #ListeAbonnes button{
+  background-color: #00F050;
+  margin: 1%;
+}
+
+#ListeAbonnements, #ListeAbonnes, #ListeMessages, #ListeCitations, #Messages{
+  border: 3px double black;
+  padding:1%;
+  margin: 1%;
+}
+
+#Photo img{
+  border: 3px groove black;
+}
+
+#Photo{
+  float: right;
+  margin: 1%;
+}
+
+#Informations{
+  text-align: center;
+  border: 5px groove GreenYellow;
+  height: 350px;
+}
+
+#postMessage form{
+  text-align: center;
+  border: 2px solid blue;
+  margin: 1%;
+  padding: 1%;
+}
+
+#postMessage form label{
+  vertical-align: top;
+  margin: 20px;
+}
+
+
+label{
+  vertical-align: top;
+}

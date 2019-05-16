@@ -1,0 +1,176 @@
+##TEXIER Léane
+##Groupe 1
+
+##Question 1:
+La valeur maximale de l'entropie d'un fichier est log2(m). (m est la taille de l'alphabet source)
+L'entropie d'un fichier est maximale quand la distribution de probabilité est uniforme.
+C'est-à-dire quand tous les caractères apparaissent le même nombre de fois dans le fichier.
+
+
+##Question 2: 
+H(f)=Somme(s allant de 0 à 155(-Pr(S=s)*log2(Pr(S=s))))
+Pr(S=s)=ns/N
+H(f)=Somme(s allant de 0 à 155(-(ns/N)*log2(ns/N)))
+H(f)=Somme(s allant de 0 à 155((ns/N)*log2(N/ns)))
+H(f)=(1/N)*Somme(s allant de 0 à 155(ns*log2(N/ns)))
+H(f)=(1/N)*Somme(s allant de 0 à 155(ns*(log2(N)-log2(ns))))
+H(f)=(1/N)*Somme(s allant de 0 à 155(ns*log2(N)))-(1/N)*Somme(s allant de 0 à 155(ns*log2(ns)))
+H(f)=log2(N)-(Somme(s allant de 0 à 155(ns*log2(ns))))/N
+
+
+##Question 3:
+cf 'entropy.py'
+
+
+##Question 4:
+> python3 entropy.py La_Cigale_et_la_Fourmi.txt 
+624 bytes read.
+Entropy = 4.507422 bits per byte.
+
+> python3 entropy.py Sonnet_18.txt 
+626 bytes read.
+Entropy = 4.397370 bits per byte.
+
+> python3 entropy.py entropy.py 
+1473 bytes read.
+Entropy = 4.580899 bits per byte.
+
+> python3 entropy.py codage.bmp 
+378054 bytes read.
+Entropy = 4.447328 bits per byte.
+
+> python3 entropy.py codage.png 
+64951 bytes read.
+Entropy = 7.986496 bits per byte.
+
+> python3 entropy.py entropie.zip 
+818 bytes read.
+Entropy = 7.458563 bits per byte.
+
+> python3 entropy.py morse.mp3 
+71470 bytes read.
+Entropy = 7.956906 bits per byte.
+
+> python3 entropy.py morse.wav 
+782380 bytes read.
+Entropy = 7.445079 bits per byte.
+
+
+##Question 5:
+Théorème du codage sans bruit:
+H(S)/log2(q)<=nc<(H(S)/log2(q))+1
+avec nc= Longueur moyenne d'un codage optimal d'une source S
+
+
+##Question 6:
+cf 'entropy.py'
+
+
+##Question 7:
+> python3 entropy.py La_Cigale_et_la_Fourmi.txt 
+624 bytes read.
+Entropy = 4.507422 bits per byte.
+An optimal coding would reduce this file size by 43.657228 %.
+
+> python3 entropy.py Sonnet_18.txt 
+626 bytes read.
+Entropy = 4.397370 bits per byte.
+An optimal coding would reduce this file size by 45.032877 %.
+
+> python3 entropy.py entropy.py 
+1670 bytes read.
+Entropy = 4.612403 bits per byte.
+An optimal coding would reduce this file size by 42.344968 %.
+
+> python3 entropy.py codage.bmp 
+378054 bytes read.
+Entropy = 4.447328 bits per byte.
+An optimal coding would reduce this file size by 44.408397 %.
+
+> python3 entropy.py codage.png 
+64951 bytes read.
+Entropy = 7.986496 bits per byte.
+An optimal coding would reduce this file size by 0.168798 %.
+
+> python3 entropy.py entropie.zip 
+818 bytes read.
+Entropy = 7.458563 bits per byte.
+An optimal coding would reduce this file size by 6.767959 %.
+
+> python3 entropy.py morse.mp3 
+71470 bytes read.
+Entropy = 7.956906 bits per byte.
+An optimal coding would reduce this file size by 0.538673 %.
+
+> python3 entropy.py morse.wav 
+782380 bytes read.
+Entropy = 7.445079 bits per byte.
+An optimal coding would reduce this file size by 6.936509 %.
+
+
+##Question 8:
+cf 'huffman.py'
+
+
+##Question 9:
+L'utilisation de deux chaînes permet d'avoir un arbre plus précis.
+
+
+##Question 10,11 et 12:
+cf 'huffman.py'
+
+
+##Question 13:
+La taille du fichier (huffman_skeleton.py) compressé est de 5200 octets. 
+Entropie du fichier d'origine: 4.690815 bits per byte.
+Entropie du fichier compressé: 7.767788 bits per byte.
+(1-(4.690815/7.767788))*100= 39.612 (environ)
+On retrouve à moins de 2% près la valeur donnée par entropy indiquant de combien de pourcent le fichier peut être réduit pour être optimal (41.36% environ). 
+
+
+##Question 14:
+cf 'huffman.py'
+
+##Question 15:
+
+La_Cigale_et_la_Fourmi.txt 
+Gain obtenu: 43.269231 %
+Gain théorique: 43.657228 %
+Différence: 0.387997 %
+
+Sonnet_18.txt
+Gain obtenu: 44.56869 %
+Gain théorique: 45.032877 %
+Différence: 0.464187 %
+
+entropy.py 
+Gain obtenu: 42.035928 %
+Gain théorique: 42.344968 %
+Différence: 0.30904 %
+
+codage.bmp 
+Gain obtenu: 43.958271 %
+Gain théorique: 44.408397 %
+Différence: 0.450126 %
+
+codage.png 
+Gain obtenu: 0.007698 %
+Gain théorique: 0.168798 %
+Différence: 0.1611 %
+
+entropie.zip 
+Gain obtenu: 6.234719 %
+Gain théorique: 6.767959 %
+Différence: 0.53324 %
+
+morse.mp3 
+Gain obtenu: 0.314817 %
+Gain théorique: 0.538673 %
+Différence: 0.223856 %
+
+morse.wav 
+Gain obtenu: 6.707738 %
+Gain théorique: 6.936509 %.
+Différence: 0.228771 %
+
+

@@ -1,0 +1,1 @@
+Search.setIndex({titles:["Course_chicon","&lt;no title&gt;","&lt;no title&gt;"],objects:{},envversion:43,terms:{},objnames:{},titleterms:{course_chicon:0},filenames:["index","Time","competitor"],objtypes:{}})

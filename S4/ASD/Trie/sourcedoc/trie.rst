@@ -1,0 +1,7 @@
+=====
+Trie
+=====
+
+
+.. automodule:: trie
+   :members: 

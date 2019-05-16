@@ -1,0 +1,83 @@
+/* Léane Texier */
+
+* {
+	font-family : Comic Sans MS;
+}
+
+header span{
+	color: white;
+}
+
+h1{
+  	font-size: 50px;
+  	border: 3px double white;
+}
+
+header h1, header h2 {
+	text-align: center;
+	font-style:italic;
+}
+
+body{
+	background-color: #0060B0;
+}
+
+article.livre {
+	text-align:center;
+	display: inline-block;
+	border : 2px solid black;
+	box-shadow: 3px 3px 3px;
+	background-color: LightBlue;
+	width : 270px;
+	height: 500px;
+	margin: 10px;
+	vertical-align: top;
+}
+
+.livre:hover {
+	box-shadow: 2px 2px 20px white;
+}
+
+img{
+	height:100%;
+	width: 100%;
+  	margin-top: 10px;
+	border: 2px solid #0060E0;
+}
+
+.couverture{
+	height: 300px;
+	margin-left:auto;
+	margin-right: auto;
+	width:80%;
+}
+
+.titre {
+	font-weight:bold;
+  	border: 1px dashed white;
+  	color: Red;
+}
+
+div.serie {
+	font-style:italic;
+	font-size:smaller;
+  	color: Grey;
+}
+
+div.auteurs span{
+  	text-decoration: underline;
+  	text-decoration-style:dashed;
+  	color: azure;
+}
+
+time{
+  	color: LightSlateGray;
+}
+
+div.catégorie{
+  	color: #F00000;
+}
+
+.description{
+	padding: 9px;
+}

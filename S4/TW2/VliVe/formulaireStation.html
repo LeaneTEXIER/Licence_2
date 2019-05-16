@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--Léane Texier-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Recherches de stations</title>
+        <script type="text/javascript" src="lib/scriptFormulaire.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="vliVe.css" />
+    </head>
+    <body>
+    <div id="LienAccueil">
+      <a href="page_accueil.php">Liste de stations</a>
+    </div>
+    <form action="stationTri.php" id="formulaire" method='post'>
+      <fieldset>
+        <select id="critere" name="crit" onchange="change();">
+          <option value="communes">Nom de communes</option>
+          <option value="stations">Nom de station</option>
+          <option value="velosD">Nombre de vélos disponibles</option>
+          <option value="placesD">Nombre de places disponibles</option>
+          <option value="distance">Près d'un endroit à préciser</option>
+        </select>
+        <div id="dispo">
+          <label>Nombre de disponibilité au minimum : </label><input type="number" name="disponibilite"  />
+        </div>
+        <div id="nom">
+          <label>Nom : </label><input type="text" name="nomSC" />
+        </div>
+        <div id="distance">
+          <p> Sélectionnez un point sur la carte.</p>
+          <label>Distance maximale(en metres) : </label><input type="number" name="dist" />
+          <input type="hidden" name="lng" id='lng'/>
+          <input type="hidden" name="lat" id='lat'/>
+          <div id='carteForm'></div>
+        </div>
+    </fieldset>
+       <fieldset>
+       <button name="valid" type="submit">Chercher</button>
+       </fieldset>
+     </form>
+     <div id="credits">
+       <a href="credits.html">Crédits</a>
+     </div>
+   </body>
+  </html>

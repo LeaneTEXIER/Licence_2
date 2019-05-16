@@ -1,0 +1,32 @@
+##TEXIER Léane
+##Groupe 1
+
+##Question 2:
+3) Lorsque p=0, la valeur renvoyée par la fonction est l'entier qu'on lui donne.
+4) Lorsque p=1, la valeur renvoyée par la fonction correpond à 255 moins l'entier qu'on lui donne.
+
+
+##Question 6:
+Le fichier devient méconnaissable, quand p est supérieur à 0,01 (soit 1%).
+
+
+##Question 7:
+Le fichier produit ne peut pas être décompréssé.
+
+
+##Questions 16
+Le codage semble incorrect quand p est supérieur à 0,05 (soit 5%).
+
+
+##Question 20:
+modulo2(g_8_4 * controlT_g_8_4)=0
+On a donc bien l'égalité suivante: G·tH = 0
+
+
+##Question 27:
+Avec le codage de Hamming, il y a moins d'erreurs détectées qu'avec le codage par répétition.
+Le codage de Hamming ne corrige pas toutes les erreurs contrairement au codage par répétition.
+La méthode de Hamming permet de prendre en compte des taux d'erreurs plus élevés.
+
+
+

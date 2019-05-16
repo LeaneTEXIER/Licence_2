@@ -1,0 +1,28 @@
+digraph G {
+1 [style=filled,color=blue];
+0 -> 1 [label=" banane"];
+2 [style=filled,color=pink];
+0 -> 2 [label=" c"];
+3 [style=filled,color=blue];
+2 -> 3 [label=" ar"];
+4 [style=filled,color=blue];
+3 -> 4 [label=" re"];
+5 [style=filled,color=blue];
+4 -> 5 [label=" au"];
+6 [style=filled,color=blue];
+4 -> 6 [label=" lage"];
+7 [style=filled,color=blue];
+3 -> 7 [label=" ton"];
+8 [style=filled,color=blue];
+2 -> 8 [label=" i"];
+9 [style=filled,color=blue];
+8 -> 9 [label=" tron"];
+10 [style=filled,color=blue];
+9 -> 10 [label=" nier"];
+11 [style=filled,color=pink];
+0 -> 11 [label=" po"];
+12 [style=filled,color=blue];
+11 -> 12 [label=" ire"];
+13 [style=filled,color=blue];
+11 -> 13 [label=" mme"];
+}

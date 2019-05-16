@@ -1,0 +1,178 @@
+/* Léane Texier */
+* {
+	font-family : Comic Sans MS;
+}
+
+body {
+  background-image: url(img/fond.jpg);
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-size: 50px;
+  background-color: white;
+  border: 3px double red;
+  text-align: center;
+}
+
+h2{
+  font-size: 20px;
+  background-color: white;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 1%;
+  border: 2px groove black;
+  text-align: center;
+}
+
+span{
+  color: red;
+}
+
+#LienFormulaire>a{
+  color: white;
+  background-color: red;
+  border: 1px dashed white;
+  padding: 5px;
+  position: absolute;
+  right: 1%;
+  top: 120px;
+  font-size: 20px;
+}
+
+#LienAccueil>a{
+  color: white;
+  background-color: red;
+  border: 1px dashed white;
+  padding: 5px;
+  font-size: 20px;
+}
+
+fieldset{
+  background-color: DeepSkyBlue;
+  margin: 1%;
+  color: red;
+}
+
+
+#credits>a{
+  position: absolute;
+  right: 1%;
+  color: DeepSkyBLue;
+  background-color: red;
+  border: 1px dashed DeepSkyBlue;
+  padding: 0.5%;
+}
+
+
+td{
+  border: 2px solid black;
+}
+
+th{
+  border: 3px solid black;
+  padding: 1%;
+}
+
+table{
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+
+tbody{
+  color: rgb(150,200,200);
+  background-color: rgba(500,00,50,0.88);
+}
+
+td.nom>a{
+  color: rgb(150,200,200);
+}
+
+thead{
+  background-color: rgba(500,00,50,1);
+  font-size: 20px;
+  color: DeepSkyBLue;
+}
+
+
+#carte{
+  width: 50%;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
+#carteInfos{
+	width: 50%;
+	height: 300px;
+  display: block;
+  margin: auto;
+}
+
+#carteForm{
+  margin: auto;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background-color: DeepSkyBLue;
+  color: black;
+}
+
+#Infos_Carte{
+  display: none;
+}
+
+#Infos_complementaires{
+  background-color: DeepSkyBlue;
+  border: 2px solid;
+  margin: 1%;
+  margin-right: 25%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+#station{
+  font-size: 20px;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  font-weight: bold;
+  text-align: center;
+}
+
+header>p{
+  width: 77%;
+  background-color: DeepSkyBlue;
+  margin: auto;
+  margin-bottom: 1%;
+  border: 2px solid black;
+  color: white;
+  box-shadow: 5px 2px 2px red;
+  text-align: center;
+}
+
+#erreur{
+  background-color: red;
+  font-size: 50px;
+  color: white;
+  border: 3px double white;
+  margin-top: 10%;
+  text-align: center;
+}
+
+#lien_credits{
+  background-color: DeepSkyBlue;
+  color: DimGrey;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 0.1%;
+  border: 1px solid red;
+}
+
+#lien_credits a{
+  color: red;
+}

@@ -1,0 +1,32 @@
+Projet sur les fractales (2015)
+DEBRAY Julie
+FONTAINE Mallaury
+TEXIER Léane
+
+
+Première semaine:
+Choix, découverte et compréhension du sujet.
+Réalisation du module points.py
+Commencement du module cercles.py avec la réalisation de la fonction "tangents".
+
+Deuxième semaine:
+Dans le module cercles.py, réalisation des fonctions soddy et soddy_cercle_petit.
+Difficultés rencontrées: Comprendre les formules données.
+
+Troisième semaine:
+Réalisation des cercles de Soddy intérieurs et extérieurs. 
+Problèmes rencontrés: Tracer le cercle de Soddy extérieur, le tracer avec un n impair.
+Resolution: Modification des fonctions soddy, une crée le cercle tangents à 3 cercles tangents intérieur, l'autre crée le cercle tangents à deux cercles tangents dans un grand cercle.
+Objectifs de la semaine: La récursivité.
+
+Quatrième semaine:
+Objectifs: La documentation & créer et enregistrer les fractales créées.
+Réalisation de la première récursivité et résolution de ses problemes ( que ça marche avec tout n et qu'on puisse faire la seconde récursivité) + documentation
+Commencement de la seconde récursivité qui n'en est pas encore une et crétion de quelques recettes; ajout du critère d'arrêt en paramètre.
+Travail à réaliser avant le rendu final: réalisation de la seconde récursivité, trouver une plateforme d'enregistrement des recettes, terminer la documentation et réaliser le pdf.
+
+Au jour du rendu: 
+* 2 modules cercles, un marche sans la deuxième récursivité (cercles1.py), l'autre utilise une récursivité mais trace quelques cercles au mauvais endroit.(cercle2.py)
+* Réalisation du pdf 
+* Recherche sur le module pillow qui devrait enregistrer les recettes.
+			
